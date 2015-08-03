@@ -1,0 +1,31 @@
+@import "./card/style.styl"
+
+test(color = red)
+	border 1px solid color
+	box-sizing border-box
+body
+	font-family Arial
+	font-size 16px
+	margin 0
+.Layaut
+	display flex
+	padding .5px
+	margin .5em
+	test(brown)
+	flex-direction column
+	height 100vh
+	> section
+		margin .5em
+	&-main
+		display flex
+		justify-content flex-start
+	&-status
+		test(green)
+	&-battle
+		test(orange)
+	&-phases
+		test(purple)
+	&-antagonist
+		test(blue)
+	&-player
+		test(gray)
